@@ -9,16 +9,20 @@ Laravel Lumen is a stunningly fast PHP micro-framework for building web applicat
 
 ## Official Documentation
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).<br>
+Documentation for the API can be found on the [Lumen website](https://documenter.getpostman.com/view/12244527/TzecDQxJ).<br>
+COllections for the API can be found on the [Lumen website](https://www.getpostman.com/collections/dce5cc690086bdbd3f37).<br>
 
-## Contributing
+## How to run this repository
+<ul>
+    <li>Clone this repository with this command-> git clone https://github.com/muhammadyusronn/backend-evaluasikinerja.git</li>
+    <li>Run this command -> cd backend-evaluasikinerja</li>
+    <li>Run this command -> cp .env.example .env</li>
+    <li>Checkout to branch development -> git checkout development</li>
+    <li>Run this command -> composer install</li>
+    <li>Run this command -> php artisan jwt:scret</li>
+    <li>Set your database in .env -> DB_DATABASE=evaluasikinerja DB_USERNAME=root DB_PASSWORD=</li>
+    <li>Run this command -> php artisan migrate:fresh --seed</li>
+    <li>Run this command -> php -S localhost:8000 -t public</li>
+</ul>
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
